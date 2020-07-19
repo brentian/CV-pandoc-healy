@@ -1,4 +1,4 @@
-name: Chuwen Zhang, 张楚文
+name: Chuwen Zhang
 title: Curriculum Vita
 # address:
 #   - 219 Meserve Hall
@@ -6,44 +6,57 @@ title: Curriculum Vita
 #   - 360 Huntington Avenue
 #   - Boston, MA 02118
 email: chuwzhang@gmail.com
-# twitter: benmschmidt
 github: github.com/brentian
 tel: (+86) 13227268829
 bibliography: ref.bib
 
 appointment:
-  - place: Northeastern University
+  - place: Cardinal Operations, Algorithm Engineer (Operations Research)
+    date: September 2018 - Present
     items:
-      - item: Assistant Professor of History
-        date: August 2013–Present
-      - item: Core Faculty, NuLab for Texts, Maps, and Networks
-        date: August 2013–Present
-      - item: Affiliate Faculty, Program in Information Design and Visualization
-        date: November 2014–Present
-  - place: Harvard University, School of Engineering and Applied Sciences
+      - item: Large-scale MILP algorithm design for production planning
+        slots:
+          - slot: Developed a very large-scale (17m constraints and 19m variables) planning model for a global ICT gaint to tackle difficulties in delivery requirements.
+          - slot: Designed an LP-based iterative procedure to decompose the full problem including various pre and post processing techniques, graph-based heuristics to deal with integral and hard features. The model has been deployed and used in real production.
+          - slot: Extended the model as a S&OP and APS product tailored for manufacturing industry.
+
+      - item: Planning models for air-cargo operation
+        slots:
+          - slot: Implemented MILP, mixed integer SOCP programs for an aircraft position assignment problem that optimizes allocations for incoming cargo planes to minimize the total processing time needed for air cargo transfers.
+          - slot: Applied a geometric rounding scheme for the assignment constraints to achieve a 10% optimality gap comparable to 8% gaps obtained by mixed integer programs within 1 hr.
+
+  - place: RTBAsia, Data Scientist
+    date: September 2017- August 2018
     items:
-      - item: Graduate Fellow, Cultural Observatory @ Harvard
-        date: 2011–2013
+      - item: Machine learning models for advertising fraud detection
+        slots:
+          - slot: Designed online (streaming) and offline machine learning pipelines for invalid traffic detection with implementation in Spark and Kafka
+          - slot: Researched on DL-based (CV + NLP) models to evaluate Ad context (URL, for example) for digital marketing, and to protect brands from unsafe, inappropriate, or incompatible content.
 
 education:
   - place: The University of Texas at Austin
     item: M.S. in Operations Research
     date: June 2017
     info:
-      - Major fields in mixed integer programming and application in supply chain management.
-      - Advisor, Jonathan F. Bard
+      - text: Major fields in mixed integer programming and applications in supply chain management.
+      - text: Advisor, Jonathan F. Bard
   - place: Shanghai Jiao Tong University
     item: B.E. in Industrial Engineering
     date: June 2015
 
+# competencies:
+#   - item: "Proficient: Python, Julia, Pandoc, Scala, Spark"
+#   - item: "Past experience/collaborative use: C++, HTML5/CSS, Unix, Haskell, JavaScript, LaTeX"
+#   - item: "Summary: proficient in linear, conic, and mixed integer optimization, and methods for large scale applications with real-world practice. Familiar with common machine learning algorithms and experienced in modeling pipeline in big data environment."
+#   - item: "Proficient: JuMP, Mosek, Gurobi, COPT, CLP, Spark ML"
+#   - item: "Collaborative use: TensorFlow"
+
+competencies:
+  - item: "Proficient: Python, Julia, Pandoc, Scala, Spark"
+  - item: "Past experience/collaborative use: C++, HTML5/CSS, Unix, Haskell, JavaScript, LaTeX, TensorFlow"
+  - item: "Modeling: JuMP, Mosek, Gurobi, COPT, CLP, Spark ML"
+  - item: "Summary: proficient in linear, conic, and mixed integer optimization, and methods for large scale applications with real-world practices. Familiar with common machine learning algorithms and experienced in modeling pipeline in big data environment."
+
 publication:
   - citekey: zhang2017controlling
     twopage: true
-
-competencies:
-  - type: Computing Platforms
-    items:
-      - "Substantial experience (could lead workshops): R, Python, Javascript, MySQL, D3."
-      - "Research/collaborative use: HTML5/CSS, Unix administration, Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
-  - type: Languages
-    items: German (intermediate), Spanish (reading), French (reading).

@@ -28,3 +28,4 @@ cv.tex: template.latex curriculum_vitae.yaml vc.tex
 clean:
 	latexmk -C *.tex
 	rm cv.tex	
+	rm vc.tex

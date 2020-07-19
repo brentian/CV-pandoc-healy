@@ -45,14 +45,10 @@
 %% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
 %% and is worth every penny. Any good monospace font will work fine, though.
 %% Consolas or inconsolata are good alternatives.
-% \setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Bake} 
-% \setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Myriad Pro}
-% \setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
-% \usepackage{pa}
 \setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Latin Modern Sans}
-\setmonofont[Mapping=tex-text,Scale=0.9]{Roboto Mono}
-\usepackage[oldstylenums,onlyrm]{kpfonts-otf}
-
+% \setmonofont[Mapping=tex-text,Scale=0.9]{Roboto Mono}
+\usepackage[onlyrm]{kpfonts-otf}
+% \setCJKmainfont{PingFang SC}
 %% ------------------------------------------------------------------------
 %% Header and footer
 %% ------------------------------------------------------------------------
@@ -185,11 +181,11 @@
   \global\aftersecfalse}
 
 % Section styling
-\titleformat{\section}[leftmargin]{\raggedleft\sffamily\footnotesize}{}{0pt}{}[\setsubskip]
+\titleformat{\section}[leftmargin]{\raggedleft\sffamily}{}{0pt}{}[\setsubskip]
 \titlespacing*{\section}{2cm}{2.5ex}{0.5cm}
 
 % Subsection styling
-\titleformat{\subsection}{\subskip\itshape}{}{0pt}{}[]
+\titleformat{\subsection}{\subskip\bfseries}{}{0pt}{}[]
 \titlespacing*{\subsection}{0pt}{2ex}{1ex}
 
 \raggedbottom
