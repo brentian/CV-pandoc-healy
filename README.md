@@ -16,7 +16,7 @@ I've drifted far enough from any of those that it doesn't quite make sense to tr
 [Here's **an example** of the CV output by this repository.](http://benschmidt.org/SchmidtCV.pdf) Note that you won't be able to build this locally from the repo without a copy of my personal `.bib` file, which stores publications; you'll need to create your own and specify the location in the obvious spot in "curriculum_vitae.yaml".
 
 ## Usage
-
+$\faGit$
 `make` to build my CV in short and long form, sans citations. Though I don't know why you'd want to build my CV.
 
 ### Repurposing.

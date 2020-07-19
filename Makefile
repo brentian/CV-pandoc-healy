@@ -1,15 +1,9 @@
 SHELL := /bin/zsh
 
-all: validate_yaml long_CV.pdf short_CV.pdf
+all: clean cv.pdf
 
-validate_yaml:
-	@python -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < curriculum_vitae.yaml
-
-%_CV.pdf: %_CV.tex
-	xelatex $*_CV
-	biber $*_CV
-	xelatex $*_CV
-	xelatex $*_CV
+cv.pdf: cv.tex
+	latexmk --xelatex -f -cd -quiet $<
 
 vc.tex: curriculum_vitae.yaml
 	sh vc.sh
@@ -22,7 +16,7 @@ yaml_CV.md: curriculum_vitae.yaml
 	cat $< >> $@
 	echo "..." >> $@
 
-%_CV.tex: template_for_%_CV.tex curriculum_vitae.yaml vc.tex
+cv.tex: template.latex curriculum_vitae.yaml vc.tex
 # Pandoc does the initial compilation to tex; we then latex handle the actual bibliography
 # and pdf creation.
 	echo " " | pandoc --metadata-file curriculum_vitae.yaml --template=$< -t latex > $@
@@ -32,5 +26,5 @@ yaml_CV.md: curriculum_vitae.yaml
 	perl -pi -e 'if ($$_=~/cite\{/) {s/\\_/_/g}; s/(\d{4})-([Pp]resent|\d{4})/$$1--$$2/g' $@;
 
 clean:
-	rm -f *CV.aux *CV.bcf *CV.log *CV.out *CV.run.xml *CV.pdf short_CV.tex long_CV.tex *CV.bbl *CV.blg *yaml_CV.md
-
+	latexmk -C *.tex
+	rm cv.tex	
