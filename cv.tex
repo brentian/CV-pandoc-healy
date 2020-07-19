@@ -1,0 +1,98 @@
+\documentclass[11pt, letter]{article}
+
+% This is a tex file to make Chuwen's CV.
+% The content is 
+
+\usepackage{jk-vita}
+\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+%\usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+\addbibresource{ref.bib}
+
+\title{}
+\name{Chuwen Zhang}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{
+    }
+  
+    
+    \email{chuwzhang@gmail.com}
+    
+    \tel{(+86) 13227268829}
+    
+    
+    \github{github.com/brentian}
+    
+  \subject{}
+  
+\begin{document}
+\maketitle
+
+
+\section{Education}
+% Education uses a different field called ``items.''
+\subsection{The University of Texas at Austin \\
+  \bullet \quad M.S. in Operations Research, June 2017}
+% Store certain things in a field called 'text' to allow another field
+% for priority.
+\textit{Major fields in mixed integer programming and applications in
+supply chain management.} \\
+% Store certain things in a field called 'text' to allow another field
+% for priority.
+\textit{Advisor, Jonathan F. Bard} \\
+\subsection{Shanghai Jiao Tong University \\
+  \bullet \quad B.E. in Industrial Engineering, June 2015}
+
+\section{Professional Experience}
+
+\subsection{Cardinal Operations, Algorithm Engineer (Operations
+Research)}
+\texttt{September 2018 - Present} \\
+\textit{Large-scale MILP algorithm design for production planning} \\
+\bullet\quad Developed a very large-scale (17m constraints and 19m
+variables) planning model for a global ICT gaint to tackle difficulties
+in delivery requirements. \\
+\bullet\quad Designed an LP-based iterative procedure to decompose the
+full problem including various pre and post processing techniques,
+graph-based heuristics to deal with integral and hard features. The
+model has been deployed and used in real production. \\
+\bullet\quad Extended the model as a S\&OP and APS product tailored for
+manufacturing industry. \\
+\textit{Planning models for air-cargo operation} \\
+\bullet\quad Implemented MILP, mixed integer SOCP programs for an
+aircraft position assignment problem that optimizes allocations for
+incoming cargo planes to minimize the total processing time needed for
+air cargo transfers. \\
+\bullet\quad Applied a geometric rounding scheme for the assignment
+constraints to achieve a 10\% optimality gap comparable to 8\% gaps
+obtained by mixed integer programs within 1 hr. \\
+\subsection{RTBAsia, Data Scientist}
+\texttt{September 2017- August 2018} \\
+\textit{Machine learning models for advertising fraud detection} \\
+\bullet\quad Designed online (streaming) and offline machine learning
+pipelines for invalid traffic detection with implementation in Spark and
+Kafka \\
+\bullet\quad Researched on DL-based (CV + NLP) models to evaluate Ad
+context (URL, for example) for digital marketing, and to protect brands
+from unsafe, inappropriate, or incompatible content. \\
+
+\section{Skills}
+
+Proficient: Python, Julia, Pandoc, Scala, Spark.\\[.15cm]
+Past experience/collaborative use: C++, HTML5/CSS, Unix, Haskell,
+JavaScript, LaTeX, TensorFlow.\\[.15cm]
+Modeling: JuMP, Mosek, Gurobi, COPT, CLP, Spark ML.\\[.15cm]
+Summary: proficient in linear, conic, and mixed integer optimization,
+and methods for large scale applications with real-world practices.
+Familiar with common machine learning algorithms and experienced in
+modeling pipeline in big data environment..\\[.15cm]
+
+\section{Publications}
+\cite{zhang2017controlling} \\[.15cm]
+
+
+
+\end{document}

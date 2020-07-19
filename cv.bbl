@@ -1,0 +1,69 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{zhang2017controlling}{article}{}
+      \name{author}{3}{}{%
+        {{hash=43c5a886c4e5f256d8c8c8d3bb2f6580}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chuwen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1aba3969ebba4743bde2df4e3a363c52}{%
+           family={Bard},
+           familyi={B\bibinitperiod},
+           given={Jonathan\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a5b2828826ee2601347beefe631848f6}{%
+           family={Chacon},
+           familyi={C\bibinitperiod},
+           given={Rodolfo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor {\&} Francis}%
+      }
+      \strng{namehash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \strng{fullhash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \strng{bibnamehash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \strng{authorbibnamehash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \strng{authornamehash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \strng{authorfullhash}{c4bfa1040b3eef57ebb900960b647bd6}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Production Research}
+      \field{number}{24}
+      \field{title}{{Controlling work in process during semiconductor assembly and test operations}}
+      \field{volume}{55}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{7251\bibrangedash 7275}
+      \range{pages}{25}
+      \verb{file}
+      \verb :Users/brent/Documents/references//Zhang, Bard, Chacon{\_}2017{\_}Controlling work in process during semiconductor assembly and test operations.pdf:pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

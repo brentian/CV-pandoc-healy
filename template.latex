@@ -1,0 +1,101 @@
+\documentclass[11pt, letter]{article}
+
+% This is a tex file to make Chuwen's CV.
+% The content is 
+
+\usepackage{jk-vita}
+\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+%\usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{
+  $for(address)$
+  $address$\\
+  $endfor$
+  }
+  
+  $if(www)$
+  \www{$www$}
+  $endif$
+  
+  $if(email)$
+  \email{$email$}
+  $endif$
+  
+  $if(tel)$
+  \tel{$tel$}
+  $endif$
+  
+  $if(twitter)$
+  \twitter{$twitter$}
+  $endif$
+  
+  $if(github)$
+  \github{$github$}
+  $endif$
+  
+  \subject{}
+  
+\begin{document}
+\maketitle
+
+
+\section{Education}
+% Education uses a different field called ``items.''
+$for(education)$
+\subsection{$education.place$ \\
+  \bullet \quad $education.item$, $education.date$}
+$if(education.info)$
+$for(education.info)$
+$if(education.info.text)$
+% Store certain things in a field called 'text' to allow another field
+% for priority.
+\textit{$education.info.text$} \\
+$else$
+$education.info$
+$endif$
+$endfor$
+$endif$
+$endfor$
+
+\section{Professional Experience}
+
+$for(appointment)$
+\subsection{$appointment.place$}
+\texttt{$appointment.date$} \\
+$for(appointment.items)$
+\textit{$appointment.items.item$} \\
+$for(appointment.items.slots)$
+\bullet\quad $appointment.items.slots.slot$ \\
+$endfor$
+$endfor$
+$endfor$
+
+\section{Skills}
+
+$for(competencies)$
+$competencies.item$.\\[.15cm]
+$endfor$
+
+\section{Publications}
+$for(publication)$
+$if(publication.citekey)$
+\cite{$publication.citekey$} \\[.15cm]
+$if(publication.text)$
+$publication.text$ \\
+$endif$
+$endif$
+$endfor$
+
+
+
+\end{document}
