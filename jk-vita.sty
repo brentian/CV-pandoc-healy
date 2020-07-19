@@ -40,15 +40,14 @@
 \definecolor{ImperialBlue}{rgb}{0.082,0.416,0.608}
 \definecolor{ImperialLightBlue}{rgb}{0.545,0.682,0.8}
 
-%% Choose fonts for use with xelatex
-%% Minion and Myriad are widely available, from Adobe. 
-%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
-%% and is worth every penny. Any good monospace font will work fine, though.
-%% Consolas or inconsolata are good alternatives.
+%% set fonts
 \setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Latin Modern Sans}
-% \setmonofont[Mapping=tex-text,Scale=0.9]{Roboto Mono}
+\setmonofont[Mapping=tex-text,Scale=0.9]{Hack}
 \usepackage[onlyrm]{kpfonts-otf}
+% set CJK, or use default
 % \setCJKmainfont{PingFang SC}
+
+
 %% ------------------------------------------------------------------------
 %% Header and footer
 %% ------------------------------------------------------------------------
@@ -94,6 +93,7 @@
 \def\address#1{\def\@address{#1}}
 \def\subject#1{\def\@subject{#1}}
 \def\github#1{\def\@github{#1}}
+\def\wechat#1{\def\@wechat{#1}}
 
 %% Date format (if you wanted to include the date but you'll see below
 %% I just use the version control info instead
@@ -133,6 +133,7 @@
     {\scriptsize \texttt{\@tel \, \faPhone} } \\
     {\scriptsize  \texttt{\href{mailto:\@email}{\@email}} \, \faEnvelope} \\
     {\scriptsize  \texttt{\href{https://\@github}{\@github}} \, \faGithub} \\
+    {\scriptsize  \texttt{\href{https://\@wechat}{\@wechat}} \, \faWeixin} \\
     % {\scriptsize  \texttt{\href{http://\@www}{\@www}} \, \faGlobe} \\
     % {\scriptsize  \texttt{\href{http://twitter.com/\@twitter}{\@twitter} \, \faTwitter}}
   \end{minipage}

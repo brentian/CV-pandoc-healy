@@ -1,18 +1,18 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'cv.blg'
-[64] biber-darwin:322> INFO - === Sun Jul 19, 2020, 23:13:52
-[77] Biber.pm:415> INFO - Reading 'cv.bcf'
-[189] Biber.pm:940> INFO - Using all citekeys in bib section 0
-[200] Biber.pm:4256> INFO - Processing section 0
-[200] Utils.pm:75> INFO - Globbing data source 'ref.bib'
-[201] Utils.pm:91> INFO - Globbed data source 'ref.bib' to ref.bib
-[209] Biber.pm:4455> INFO - Looking for bibtex format file 'ref.bib' for section 0
-[210] bibtex.pm:1653> INFO - LaTeX decoding ...
-[213] bibtex.pm:1471> INFO - Found BibTeX data source 'ref.bib'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
-[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[237] Biber.pm:4084> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
-[237] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[239] bbl.pm:652> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
-[239] bbl.pm:755> INFO - Output to cv.bbl
+[67] biber-darwin:322> INFO - === Mon Jul 20, 2020, 02:14:10
+[81] Biber.pm:415> INFO - Reading 'cv.bcf'
+[192] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[203] Biber.pm:4256> INFO - Processing section 0
+[204] Utils.pm:75> INFO - Globbing data source 'ref.bib'
+[204] Utils.pm:91> INFO - Globbed data source 'ref.bib' to ref.bib
+[212] Biber.pm:4455> INFO - Looking for bibtex format file 'ref.bib' for section 0
+[213] bibtex.pm:1653> INFO - LaTeX decoding ...
+[216] bibtex.pm:1471> INFO - Found BibTeX data source 'ref.bib'
+[239] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[239] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[239] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[239] Biber.pm:4084> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[239] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[240] bbl.pm:652> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[241] bbl.pm:755> INFO - Output to cv.bbl

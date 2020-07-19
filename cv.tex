@@ -1,4 +1,4 @@
-\documentclass[11pt, letter]{article}
+\documentclass[10pt, letter]{article}
 
 % This is a tex file to make Chuwen's CV.
 % The content is 
@@ -21,12 +21,13 @@
     
     \email{chuwzhang@gmail.com}
     
-    \tel{(+86) 13227268829}
+    \tel{(+86) 13227265529}
     
     
     \github{github.com/brentian}
     
-  \subject{}
+    \wechat{brentian}
+    \subject{}
   
 \begin{document}
 \maketitle
@@ -51,44 +52,70 @@ supply chain management.} \\
 \subsection{Cardinal Operations, Algorithm Engineer (Operations
 Research)}
 \texttt{September 2018 - Present} \\
-\textit{Large-scale MILP algorithm design for production planning} \\
+\underline{\textit{Large-scale MILP algorithm design for production
+planning}} \\
 \bullet\quad Developed a very large-scale (17m constraints and 19m
 variables) planning model for a global ICT gaint to tackle difficulties
-in delivery requirements. \\
-\bullet\quad Designed an LP-based iterative procedure to decompose the
-full problem including various pre and post processing techniques,
-graph-based heuristics to deal with integral and hard features. The
-model has been deployed and used in real production. \\
+in delivery requirements and to maintain a favorable service level. \\
+\bullet\quad Designed an LP-based iterative framework to decompose the
+full problem via various pre and post processing techniques, graph-based
+heuristics to deal with integral and hard features. The model has been
+deployed and used in real production. \\
 \bullet\quad Extended the model as a S\&OP and APS product tailored for
-manufacturing industry. \\
-\textit{Planning models for air-cargo operation} \\
-\bullet\quad Implemented MILP, mixed integer SOCP programs for an
-aircraft position assignment problem that optimizes allocations for
-incoming cargo planes to minimize the total processing time needed for
-air cargo transfers. \\
+manufacturing industry. The product has been used in projects with other
+industry leaders. \\
+\underline{\textit{Planning models for air-cargo operation}} \\
+\bullet\quad Designed optimization algorithms for an air-cargo operation
+problem in a global courier company. Implemented MILP, mixed integer
+SOCP programs for the upper-level aircraft parking problem, and
+heuristic based scheduling algorithms to operate cargo trucks to
+minimize the total transferring distance and total operation time. \\
 \bullet\quad Applied a geometric rounding scheme for the assignment
 constraints to achieve a 10\% optimality gap comparable to 8\% gaps
-obtained by mixed integer programs within 1 hr. \\
+obtained by mixed integer solvers for a static planning horizon of 24
+hours. \\
+\bullet\quad Established approaches for dynamic and DRO extension (under
+uncertain plane arrival time and transferring time) from the static
+assignment problem. Based on simulation results, the position
+assignments by DRO approach reduces total operation time to 1.4 hours
+compared to over 2 hours on average from the historical data in every
+2-hour evaluation slice. \\
+\underline{\textit{Other notable projects}} \\
+\bullet\quad Designed optimization algorithms for one of China's ``Big
+Three'' airlines to decrease immense engine maintenance costs. The model
+is to generate optimal repair plans for engines within the entire fleet,
+to ensure high service levels, and to minimize zero-backup risks under
+stochastic damage development and uncertain failure events captured by
+the distributional robust approach. \\
+\bullet\quad Participated in: unit commitment problem with National
+Grid, fabrication ordering scheduling with the COMAC, etc. \\
 \subsection{RTBAsia, Data Scientist}
-\texttt{September 2017- August 2018} \\
-\textit{Machine learning models for advertising fraud detection} \\
-\bullet\quad Designed online (streaming) and offline machine learning
-pipelines for invalid traffic detection with implementation in Spark and
-Kafka \\
+\texttt{September 2017 - August 2018} \\
+\underline{\textit{Machine learning models for advertising fraud
+detection}} \\
+\bullet\quad Developed an offline ML pipeline on the Spark platform by
+learning from real-time advertising bidding logs to differentiate
+invalid traffic. \\
+\bullet\quad Created streaming models that evaluate the user behavior on
+the client websites by visiting graph and click or touch events
+generated via JavaScript. The model is able to recognize invalid traffic
+using disguised Ad IDs via CV-like features implemented in TensorFlow
+and Kafka. The JS user identification approach has then become the
+industry standard under regulation of GDPR in 2018. \\
 \bullet\quad Researched on DL-based (CV + NLP) models to evaluate Ad
 context (URL, for example) for digital marketing, and to protect brands
 from unsafe, inappropriate, or incompatible content. \\
 
 \section{Skills}
 
-Proficient: Python, Julia, Pandoc, Scala, Spark.\\[.15cm]
+Proficient: Python, Julia, Pandoc, Scala\\[.15cm]
 Past experience/collaborative use: C++, HTML5/CSS, Unix, Haskell,
-JavaScript, LaTeX, TensorFlow.\\[.15cm]
-Modeling: JuMP, Mosek, Gurobi, COPT, CLP, Spark ML.\\[.15cm]
+JavaScript, LaTeX, TensorFlow\\[.15cm]
+Modeling: JuMP, Mosek, Gurobi, COPT, CLP, Spark ML\\[.15cm]
 Summary: proficient in linear, conic, and mixed integer optimization,
-and methods for large scale applications with real-world practices.
+and methods for large scale applications with real-world practice.
 Familiar with common machine learning algorithms and experienced in
-modeling pipeline in big data environment..\\[.15cm]
+modeling pipeline in big data environment.\\[.15cm]
 
 \section{Publications}
 \cite{zhang2017controlling} \\[.15cm]

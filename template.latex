@@ -1,4 +1,4 @@
-\documentclass[11pt, letter]{article}
+\documentclass[10pt, letter]{article}
 
 % This is a tex file to make Chuwen's CV.
 % The content is 
@@ -43,6 +43,9 @@ $endif$
   \github{$github$}
   $endif$
   
+  $if(wechat)$
+  \wechat{$wechat$}
+  $endif$
   \subject{}
   
 \begin{document}
@@ -73,7 +76,7 @@ $for(appointment)$
 \subsection{$appointment.place$}
 \texttt{$appointment.date$} \\
 $for(appointment.items)$
-\textit{$appointment.items.item$} \\
+\underline{\textit{$appointment.items.item$}} \\
 $for(appointment.items.slots)$
 \bullet\quad $appointment.items.slots.slot$ \\
 $endfor$
@@ -83,7 +86,7 @@ $endfor$
 \section{Skills}
 
 $for(competencies)$
-$competencies.item$.\\[.15cm]
+$competencies.item$\\[.15cm]
 $endfor$
 
 \section{Publications}
